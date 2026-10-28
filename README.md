@@ -1,58 +1,69 @@
-# Human Activity Recognition with a Hidden Markov Model
+# Activity recognition from phone motion with a Hidden Markov Model
 
-Formative 2: Hidden Markov Models (Machine Learning Techniques II).
+I recorded my phone's accelerometer and gyroscope while standing, walking, jumping and leaving it
+still, and built a Gaussian HMM from scratch in NumPy (no HMM library) that guesses the activity.
+Baum-Welch trains it, Viterbi decodes it.
 
-I recorded my own phone's accelerometer and gyroscope data while standing, walking, jumping and staying still, then built a Hidden Markov Model from scratch (numpy) to infer which activity was happening from the sensor readings alone.
-
-## Repository structure
-
+## Layout
 ```
-hmm-activity-recognition/
-├── data/
-│   ├── train/          # labelled CSV recordings used for training (50 files)
-│   └── test/           # unseen recordings, never used in training
-├── notebooks/
-│   └── hmm_activity_recognition.ipynb
-├── figures/            # plots exported for the report (heatmap, decoded sequences, confusion matrix)
-├── report/             # final 4-5 page report
-├── requirements.txt
-└── README.md
+data/train/         56 labelled CSVs (<activity>_r<recording>_<nn>.csv, plus session_01.csv)
+data/test/          16 CSVs the model never saw (test A: 12 files, test B: 4 files)
+data/manifest.csv   for every file: source recording, phone, date, time span, group
+notebooks/          hmm_activity_recognition.ipynb   <- the whole analysis
+scripts/            prepare_sensor_logger.py, build_dataset.sh (raw exports -> data/)
+figures/            figures used in the report
+report/             the report
 ```
 
-## Data
+## Run it
+```bash
+pip install -r requirements.txt
+jupyter notebook notebooks/hmm_activity_recognition.ipynb     # Run All
+```
+The raw Sensor Logger exports are not in the repo. `scripts/build_dataset.sh` shows exactly how the
+CSVs in `data/` were made from them.
 
-- Device and app: _fill in (e.g. phone model, Sensor Logger)_
-- Sensors: accelerometer (x, y, z) and gyroscope (x, y, z), with a timestamp column
-- Sampling rate: _fill in_ Hz
-- Activities: standing, walking, jumping, still
-- File naming: `<activity>_<number>.csv`, e.g. `walking_01.csv`
-- Training set: _fill in_ files (about 12-13 per activity, 8-10 s each)
-- Test set: _fill in_ files, recorded in a separate session
+## The data
+- **App and sensors:** Sensor Logger (iOS and Android). Accelerometer including gravity, and gyroscope.
+- **Sampling rate:** the phones log at about 100 Hz (the Samsung at 102 Hz). Everything is resampled to
+  **50 Hz** on the recorded timestamps. Windows are 2 s long and overlap by 50 %.
+- **Training (iPhone 11 Pro):** long continuous recordings (standing 128 s, walking 122 s, still 122 s,
+  five jumping takes of 23 to 39 s), trimmed at both ends and cut into 8 s files, plus one 72 s
+  recording that goes still, standing, walking, jumping. In that one the moments where I pick the phone up
+  or switch activity are left unlabelled and ignored. Every activity has at least 90 s of data.
+- **Test A (iPhone 11, same day as training):** three 8 s files per activity, taken from the middle of
+  separate recordings. The first 27 s of the jumping recording are left out, because two phones recorded
+  that jump at the same time and the training file `jumping_2` is the same bout.
+- **Test B (next day, other phones):** iPhone 16 Pro (jumping, still) and Samsung SM-A235F
+  (standing, walking). Each short recording is one file. Android logs m/s2 with the opposite sign to
+  iPhones, so its accelerometer values are divided by -9.81 to match.
+- **Recorded by / where (test files):** _<fill in>_
 
-## Demo videos
-
-| Activity | Video link |
+### Videos
+| Activity | Link |
 |---|---|
-| Standing | _add link_ |
-| Walking | _add link_ |
-| Jumping | _add link_ |
-| Still | _add link_ |
+| Standing | _<link>_ |
+| Walking | _<link>_ |
+| Jumping | _<link>_ |
+| Still | _<link>_ |
 
-## How to run
-
-1. Install the requirements: `pip install -r requirements.txt`
-2. Open `notebooks/hmm_activity_recognition.ipynb`
-3. Run all cells from top to bottom. The notebook reads the files in `data/train/` and `data/test/`.
-
-## Method summary
-
-1. Load and clean the recordings and bring them to one sampling rate
-2. Cut each recording into windows
-3. Extract time-domain and frequency-domain features and normalise them
-4. Define the HMM: hidden states (activities), observations (feature vectors), transition, emission and starting probabilities
-5. Train with Baum-Welch and decode with Viterbi (both implemented in numpy)
-6. Evaluate on the unseen test files (sensitivity, specificity, accuracy, confusion matrix)
+## Method in short
+12 features per window (8 time-domain, 4 from the FFT), z-scored with training statistics. The
+orientation features (mean of each axis) were tried and dropped: they describe how the phone is held,
+not what the person does, and they hurt on a recording where I held it differently. Emissions are
+diagonal Gaussians; training starts from the labelled windows; Baum-Welch stops when the average
+log-likelihood improves by less than 1e-6.
 
 ## Results
+Window-level results on recordings never used for training or for choosing features
+(95 % Wilson intervals are in the notebook):
 
-_Fill in after evaluation._
+| Set | Files | Windows | Accuracy |
+|---|---|---|---|
+| Test A | 12 | 84 | 1.00 |
+| Test B | 4 | 23 | 1.00 |
+| Session held out of training | 1 | 52 | 0.94 |
+
+Sensitivity and specificity are 1.00 for every activity on both test sets. The session check has three
+still windows decoded as standing, right where a tap on the table shows up in the signal. Adding as
+little as 0.002 g of noise to the test signals breaks the still class completely.
