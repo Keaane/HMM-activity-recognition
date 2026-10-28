@@ -1,0 +1,13 @@
+activity,windows,sensitivity,sens_low,sens_high,specificity,spec_low,spec_high,set,overall_accuracy
+standing,21,1.0,0.8454,1.0,1.0,0.9425,1.0,"Test A (iPhone 11, same day)",1.0
+walking,21,1.0,0.8454,1.0,1.0,0.9425,1.0,"Test A (iPhone 11, same day)",1.0
+jumping,21,1.0,0.8454,1.0,1.0,0.9425,1.0,"Test A (iPhone 11, same day)",1.0
+still,21,1.0,0.8454,1.0,1.0,0.9425,1.0,"Test A (iPhone 11, same day)",1.0
+standing,7,1.0,0.6457,1.0,1.0,0.8064,1.0,"Test B (other phones, next day)",1.0
+walking,7,1.0,0.6457,1.0,1.0,0.8064,1.0,"Test B (other phones, next day)",1.0
+jumping,4,1.0,0.5101,1.0,1.0,0.8318,1.0,"Test B (other phones, next day)",1.0
+still,5,1.0,0.5655,1.0,1.0,0.8241,1.0,"Test B (other phones, next day)",1.0
+standing,28,1.0,0.8794,1.0,1.0,0.9536,1.0,A + B,1.0
+walking,28,1.0,0.8794,1.0,1.0,0.9536,1.0,A + B,1.0
+jumping,25,1.0,0.8668,1.0,1.0,0.9552,1.0,A + B,1.0
+still,26,1.0,0.8713,1.0,1.0,0.9547,1.0,A + B,1.0
