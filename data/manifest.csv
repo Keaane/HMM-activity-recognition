@@ -1,0 +1,73 @@
+split,group,file,label,recording,source,device,platform,recorded,start_s,end_s
+train,train,standing_r1_01.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,2.1,10.1
+train,train,standing_r1_02.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,10.1,18.1
+train,train,standing_r1_03.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,18.1,26.1
+train,train,standing_r1_04.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,26.1,34.1
+train,train,standing_r1_05.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,34.1,42.1
+train,train,standing_r1_06.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,42.1,50.1
+train,train,standing_r1_07.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,50.1,58.1
+train,train,standing_r1_08.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,58.1,66.1
+train,train,standing_r1_09.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,66.1,74.1
+train,train,standing_r1_10.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,74.1,82.1
+train,train,standing_r1_11.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,82.1,90.1
+train,train,standing_r1_12.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,90.1,98.1
+train,train,standing_r1_13.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,98.1,106.1
+train,train,standing_r1_14.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,106.1,114.1
+train,train,standing_r1_15.csv,standing,r1,waist_level_-2026-10-26_11-33-31.zip,iPhone 11 Pro,ios,2026-10-26,114.1,122.1
+train,train,walking_r1_01.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,2.1,10.1
+train,train,walking_r1_02.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,10.1,18.1
+train,train,walking_r1_03.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,18.1,26.1
+train,train,walking_r1_04.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,26.1,34.1
+train,train,walking_r1_05.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,34.1,42.1
+train,train,walking_r1_06.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,42.1,50.1
+train,train,walking_r1_07.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,50.1,58.1
+train,train,walking_r1_08.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,58.1,66.1
+train,train,walking_r1_09.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,66.1,74.1
+train,train,walking_r1_10.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,74.1,82.1
+train,train,walking_r1_11.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,82.1,90.1
+train,train,walking_r1_12.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,90.1,98.1
+train,train,walking_r1_13.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,98.1,106.1
+train,train,walking_r1_14.csv,walking,r1,Walking-2026-10-26_11-24-57.zip,iPhone 11 Pro,ios,2026-10-26,106.1,114.1
+train,train,still_r1_01.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,2.1,10.1
+train,train,still_r1_02.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,10.1,18.1
+train,train,still_r1_03.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,18.1,26.1
+train,train,still_r1_04.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,26.1,34.1
+train,train,still_r1_05.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,34.1,42.1
+train,train,still_r1_06.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,42.1,50.1
+train,train,still_r1_07.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,50.1,58.1
+train,train,still_r1_08.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,58.1,66.1
+train,train,still_r1_09.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,66.1,74.1
+train,train,still_r1_10.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,74.1,82.1
+train,train,still_r1_11.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,82.1,90.1
+train,train,still_r1_12.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,90.1,98.1
+train,train,still_r1_13.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,98.1,106.1
+train,train,still_r1_14.csv,still,r1,still_flat_surface_-2026-10-26_11-29-17.zip,iPhone 11 Pro,ios,2026-10-26,106.1,114.1
+train,train,jumping_r1_01.csv,jumping,r1,jumping_1-2026-10-26_11-13-05.zip,iPhone 11 Pro,ios,2026-10-26,2.1,10.1
+train,train,jumping_r1_02.csv,jumping,r1,jumping_1-2026-10-26_11-13-05.zip,iPhone 11 Pro,ios,2026-10-26,10.1,18.1
+train,train,jumping_r2_01.csv,jumping,r2,jumping_2-2026-10-26_11-14-55.zip,iPhone 11 Pro,ios,2026-10-26,2.1,10.1
+train,train,jumping_r2_02.csv,jumping,r2,jumping_2-2026-10-26_11-14-55.zip,iPhone 11 Pro,ios,2026-10-26,10.1,18.1
+train,train,jumping_r3_01.csv,jumping,r3,junping_3-2026-10-26_11-16-24.zip,iPhone 11 Pro,ios,2026-10-26,2.1,10.1
+train,train,jumping_r3_02.csv,jumping,r3,junping_3-2026-10-26_11-16-24.zip,iPhone 11 Pro,ios,2026-10-26,10.1,18.1
+train,train,jumping_r4_01.csv,jumping,r4,jumping_4-2026-10-26_11-18-33.zip,iPhone 11 Pro,ios,2026-10-26,2.1,10.1
+train,train,jumping_r4_02.csv,jumping,r4,jumping_4-2026-10-26_11-18-33.zip,iPhone 11 Pro,ios,2026-10-26,10.1,18.1
+train,train,jumping_r5_01.csv,jumping,r5,jumping_5-2026-10-26_11-11-19.zip,iPhone 11 Pro,ios,2026-10-26,2.1,10.1
+train,train,jumping_r5_02.csv,jumping,r5,jumping_5-2026-10-26_11-11-19.zip,iPhone 11 Pro,ios,2026-10-26,10.1,18.1
+train,train,jumping_r5_03.csv,jumping,r5,jumping_5-2026-10-26_11-11-19.zip,iPhone 11 Pro,ios,2026-10-26,18.1,26.1
+train,train,jumping_r5_04.csv,jumping,r5,jumping_5-2026-10-26_11-11-19.zip,iPhone 11 Pro,ios,2026-10-26,26.1,34.1
+train,train,session_01.csv,mixed,session,session_iphone11pro,iPhone 11 Pro,ios,2026-10-26,0.0,71.6
+test,A,standing_r1_01.csv,standing,r1,standing_iphone11,iPhone 11,ios,2026-10-26,42.1,50.1
+test,A,standing_r1_02.csv,standing,r1,standing_iphone11,iPhone 11,ios,2026-10-26,50.1,58.1
+test,A,standing_r1_03.csv,standing,r1,standing_iphone11,iPhone 11,ios,2026-10-26,58.1,66.1
+test,A,walking_r1_01.csv,walking,r1,Walking-2026-10-26_11-21-52_2.zip,iPhone 11,ios,2026-10-26,42.1,50.1
+test,A,walking_r1_02.csv,walking,r1,Walking-2026-10-26_11-21-52_2.zip,iPhone 11,ios,2026-10-26,50.1,58.1
+test,A,walking_r1_03.csv,walking,r1,Walking-2026-10-26_11-21-52_2.zip,iPhone 11,ios,2026-10-26,58.1,66.1
+test,A,jumping_r1_01.csv,jumping,r1,Jump-2026-10-26_11-14-55.zip,iPhone 11,ios,2026-10-26,27.1,35.1
+test,A,jumping_r1_02.csv,jumping,r1,Jump-2026-10-26_11-14-55.zip,iPhone 11,ios,2026-10-26,35.1,43.1
+test,A,jumping_r1_03.csv,jumping,r1,Jump-2026-10-26_11-14-55.zip,iPhone 11,ios,2026-10-26,43.1,51.1
+test,A,still_r1_01.csv,still,r1,still_iphone11,iPhone 11,ios,2026-10-26,42.1,50.1
+test,A,still_r1_02.csv,still,r1,still_iphone11,iPhone 11,ios,2026-10-26,50.1,58.1
+test,A,still_r1_03.csv,still,r1,still_iphone11,iPhone 11,ios,2026-10-26,58.1,66.1
+test,B,standing_r2_01.csv,standing,r2,Standing15-2026-10-27_11-57-36.zip,SM-A235F,android,2026-10-27,2.2,10.5
+test,B,walking_r2_01.csv,walking,r2,Walking7-2026-10-27_12-07-47.zip,SM-A235F,android,2026-10-27,1.2,10.0
+test,B,jumping_r2_01.csv,jumping,r2,2026-10-27_11-24-17.zip,iPhone 16 Pro,ios,2026-10-27,0.5,6.3
+test,B,still_r2_01.csv,still,r2,2026-10-27_11-41-31.zip,iPhone 16 Pro,ios,2026-10-27,1.0,7.8
