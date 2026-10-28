@@ -1,6 +1,7 @@
-.ipynb_checkpoints/
 __pycache__/
-*.pyc
+.ipynb_checkpoints/
 .venv/
-venv/
 .DS_Store
+# raw Sensor Logger exports; only the processed CSVs in data/ are kept
+raw/
+*.zip
