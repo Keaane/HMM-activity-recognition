@@ -54,12 +54,15 @@ CSVs in `data/` were made from them.
   and two other friends at home (test B, iPhone 16 Pro and Samsung SM-A235F).
 
 ### Videos
+About 5 s each, recording every activity with the phone in hand (on the table for still). All four are
+also in [one Drive folder](https://drive.google.com/drive/folders/1qP9lk4-jdwW2zVzHJfrS-97dwyjKSSTp?usp=sharing).
+
 | Activity | Link |
 |---|---|
-| Standing | _<link>_ |
-| Walking | _<link>_ |
-| Jumping | _<link>_ |
-| Still | _<link>_ |
+| Standing | [Standing.MOV](https://drive.google.com/file/d/1DbuKi2fFGHKsp-Dc_dmSgkdPQfZGT58R/view?usp=sharing) |
+| Walking | [Walking.MOV](https://drive.google.com/file/d/1qN1bkOZjtsGW4xYbjx5tOWmzon84elF-/view?usp=sharing) |
+| Jumping | [Jumping.MOV](https://drive.google.com/file/d/1h8uUoRtdRANqKgtrE7Bfue7nX2O2b0dp/view?usp=sharing) |
+| Still | [Still.MOV](https://drive.google.com/file/d/1k-YQIuRrEuhhP4bo9Cw2g9SsSArijBaa/view?usp=sharing) |
 
 ## Method in short
 12 features per window (8 time-domain, 4 from the FFT), z-scored with training statistics. The
