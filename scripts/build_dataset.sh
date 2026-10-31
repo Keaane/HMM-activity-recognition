@@ -21,7 +21,7 @@ $P session "$RAW/session_iphone11pro" --out data/train --group train \
 # ---- test A: iPhone 11, same day as training; 3 files (24 s) per activity from the middle ----
 $P standing "$RAW/standing_iphone11"                  --out data/test --max-chunks 3 --group A
 $P walking  "$RAW/Walking-2026-10-26_11-21-52_2.zip" --out data/test --max-chunks 3 --group A
-# the first 27 s of this recording overlap training jumping_2 (two phones recorded together), so they are skipped
+# the first 27 s of this recording were recorded at the same moment as training jumping_2, so they are skipped to be safe
 $P jumping  "$RAW/Jump-2026-10-26_11-14-55.zip"      --out data/test --max-chunks 3 --trim-start 27 --group A
 $P still    "$RAW/still_iphone11"                    --out data/test --max-chunks 3 --group A
 
