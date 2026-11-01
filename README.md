@@ -1,6 +1,5 @@
 # Activity recognition from phone motion with a Hidden Markov Model
 
-By Gaju Keane.
 
 I recorded my phone's accelerometer and gyroscope while standing, walking, jumping and leaving it
 still, and built a Gaussian HMM from scratch in NumPy (no HMM library) that guesses the activity.
@@ -59,9 +58,9 @@ also in [one Drive folder](https://drive.google.com/drive/folders/1qP9lk4-jdwW2z
 
 | Activity | Link |
 |---|---|
-| Standing | [Standing.MOV](https://drive.google.com/file/d/1DbuKi2fFGHKsp-Dc_dmSgkdPQfZGT58R/view?usp=sharing) |
-| Walking | [Walking.MOV](https://drive.google.com/file/d/1qN1bkOZjtsGW4xYbjx5tOWmzon84elF-/view?usp=sharing) |
-| Jumping | [Jumping.MOV](https://drive.google.com/file/d/1h8uUoRtdRANqKgtrE7Bfue7nX2O2b0dp/view?usp=sharing) |
+| Standing | [Standing.MOV](https://drive.google.com/file/d/1JI3AfJLWRhbkHDnTqDMrxgdqgElyL5Xa/view?usp=sharing) |
+| Walking | [Walking.MOV](https://drive.google.com/file/d/1hlyufCnN7I3ro7HPdFge_5pGlwM0QypA/view?usp=sharing) |
+| Jumping | [Jumping.MOV](https://drive.google.com/file/d/1vLb4cIrxcw4DSrRRj534_pwlhCI7Anm7/view?usp=sharing) |
 | Still | [Still.MOV](https://drive.google.com/file/d/1k-YQIuRrEuhhP4bo9Cw2g9SsSArijBaa/view?usp=sharing) |
 
 ## Method in short
